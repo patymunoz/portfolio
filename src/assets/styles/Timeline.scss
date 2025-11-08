@@ -1,38 +1,86 @@
-.vertical-timeline span {
-    color: white;
-    font-family: 'Courier Prime', monospace;
+/* ====== Paleta ====== */
+$bg-dark: #0b0d12;
+$text-dark: #272822;
+$text-muted: #6b7280;
+$card-bg: #ffffff;
+$line: rgba(167, 139, 250, 0.35);
+$accent: #5000ca;
+$accent-light: #a78bfa;
+
+/* ====== Timeline base ====== */
+.vertical-timeline::before {
+  background: $line;
 }
 
-.vertical-timeline p {
-    color: rgb(39, 40, 34);
+.vertical-timeline-element-date {
+  color: #eaeaea !important;
+  font-family: "Courier Prime", monospace;
+  letter-spacing: 0.5px;
 }
 
-.vertical-timeline-element p {
-    color: rgb(39, 40, 34);
+.vertical-timeline-element-content {
+  background: $card-bg !important;
+  color: $text-dark !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 22px rgba(16, 18, 24, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.vertical-timeline-element h3 {
-    color: rgb(39, 40, 34);
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid $card-bg !important;
 }
 
-.vertical-timeline-element h4 {
-    color: rgb(39, 40, 34);
+.vertical-timeline-element-content h3 {
+  color: $text-dark !important;
+  margin-top: 0;
+  font-weight: 800;
+}
+.vertical-timeline-element-content h4 {
+  color: $text-dark !important;
+  margin: 0.25rem 0 0.75rem;
+  font-weight: 700;
+  opacity: 0.9;
+}
+.vertical-timeline-element-content p {
+  color: $text-dark !important;
+  line-height: 1.6;
+}
+.vertical-timeline-element-content span {
+  color: $text-dark !important;
 }
 
-.vertical-timeline-element span {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element .vertical-timeline-element-date {
-    color: white;
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px rgba(80, 0, 202, 0.25) !important; /* anillo */
+  background: radial-gradient(
+    120% 120% at 30% 20%,
+    $accent 0%,
+    $accent-light 100%
+  ) !important;
+  color: #fff !important; /* FontAwesome */
 }
 
 .svg-inline--fa {
-    color: white;
+  color: #ffffff !important;
 }
 
-@media screen and (max-width: 1170px) {
-    .vertical-timeline-element .vertical-timeline-element-date {
-        color: rgb(39, 40, 34);
-    }
+.vertical-timeline span:not(.vertical-timeline-element-date) {
+  color: inherit;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 1170px) {
+  .vertical-timeline-element .vertical-timeline-element-date {
+    color: $text-dark !important;
+    opacity: 0.85;
+  }
+  .vertical-timeline-element-content {
+    padding: 1.1rem 1.2rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .vertical-timeline-element-content {
+    border-radius: 10px !important;
+    box-shadow: 0 8px 18px rgba(16, 18, 24, 0.16);
+  }
 }

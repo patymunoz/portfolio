@@ -1,74 +1,283 @@
 import React from "react";
-import mock01 from '../assets/images/mock01.png';
-import mock02 from '../assets/images/mock02.png';
-import mock03 from '../assets/images/mock03.png';
-import mock04 from '../assets/images/mock04.png';
-import mock05 from '../assets/images/mock05.png';
-import mock06 from '../assets/images/mock06.png';
-import mock07 from '../assets/images/mock07.png';
-import mock08 from '../assets/images/mock08.png';
-import mock09 from '../assets/images/mock09.png';
-import mock10 from '../assets/images/mock10.png';
-import '../assets/styles/Project.scss';
+import mock001 from "../assets/images/mock001.png";
+import mock003 from "../assets/images/mock003.png";
+import mock005 from "../assets/images/mock005.png";
+import mock006 from "../assets/images/mock006.png";
+import mock008 from "../assets/images/mock008.png";
+import mock009 from "../assets/images/mock009.png";
+import mock010 from "../assets/images/mock010.png";
+import mock011 from "../assets/images/mock011.png";
+import mock012 from "../assets/images/mock012.png";
+import mock013 from "../assets/images/mock013.png";
+
+import "../assets/styles/Project.scss";
 
 function Project() {
-    return(
+  return (
     <div className="projects-container" id="projects">
+      {/* ──────── WORK PROJECTS ──────── */}
+      <section className="projects-section">
+        <h1>Work Projects</h1>
+        <div className="projects-grid">
+          {
+            <div className="project">
+              <a
+                href="https://salud.conahcyt.mx/vih/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={mock010}
+                  className="zoom"
+                  alt="Inundaciones GDL"
+                  width="100%"
+                />
+              </a>
+              <a
+                href="https://salud.conahcyt.mx/vih/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h2>VIH/SIDA Data Analysis</h2>
+              </a>
+              <p>
+                Data analysis and visualization project for the CONAHCYT
+                VIH/SIDA. I worked on automating data cleaning, processing, and
+                visualization tasks using Python.
+              </p>
+            </div>
+          }
+          {
+            <div className="project">
+              <a
+                href="https://salud.conahcyt.mx/coronavirus/investigacion/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={mock011} className="zoom" alt="Salud" width="100%" />
+              </a>
+              <a
+                href="https://salud.conahcyt.mx/coronavirus/investigacion/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h2>COVID-19 Data Analysis</h2>
+              </a>
+              <p>
+                Data analysis and visualization project for the CONAHCYT
+                COVID-19 research. I worked on automating data cleaning,
+                processing, and visualization tasks using Python.
+              </p>
+            </div>
+          }
+          {
+            <div className="project">
+              <a
+                href="https://energia.conahcyt.mx/sargazo/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={mock012}
+                  className="zoom"
+                  alt="COVID-19"
+                  width="100%"
+                />
+              </a>
+              <a
+                href="https://energia.conahcyt.mx/sargazo/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h2>Sargazo Data Analysis</h2>
+              </a>
+              <p>
+                Data analysis and visualization project for the CONAHCYT Sargazo
+                research. I worked on automating data cleaning, processing, and
+                visualization tasks using Python.
+              </p>
+            </div>
+          }
+        </div>
+      </section>
+
+      {/* ──────── PERSONAL PROJECTS ──────── */}
+      <section className="projects-section">
         <h1>Personal Projects</h1>
         <div className="projects-grid">
-            <div className="project">
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><h2>Filmate AI</h2></a>
-                <p>Developed movie finder app with semantic search and sentiment analysis using OpenAI GPT-3.5 Turbo, Qdrant, React, and Flask.</p>
-            </div>
-            <div className="project">
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><h2>High Speed Chase</h2></a>
-                <p>Designed, developed, and launched a 3D multiplayer racing game with C# and Unity. This is available on Itch.io for gamers worldwide to enjoy.</p>
-            </div>
-            <div className="project">
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><h2>Astro Raiders</h2></a>
-                <p>Developed and released a 2D shooting game with C# and Unity. This project is hosted on the Itch.io public marketplace.</p>
-            </div>
-            <div className="project">
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><img src={mock07} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><h2>Datum: Integrated Learning Platform</h2></a>
-                <p>This is an online educational platform that provides high-quality, data science-focused learning resources in the Japanese language. I created the entire platform from scratch using Ruby on Rails.</p>
-            </div>
-            <div className="project">
-                <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer"><img src={mock06} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer"><h2>WeManage: Real Estate Asset Management</h2></a>
-                <p>This mobile application allows realtors in Japan to securely manage their property information and view future income predictions. This app is built with Ruby on Rails and JavaScript.</p>
-            </div>
-            <div className="project">
-                <a href="https://www.byuh.edu/covid-19-case-management" target="_blank" rel="noreferrer"><img src={mock05} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.byuh.edu/covid-19-case-management" target="_blank" rel="noreferrer"><h2>COVID-19 Case Management</h2></a>
-                <p>Built official charts for COVID/vaccination tracking for an educational institution using JavaScript and the Google Sheets API v4. The dashboard served the university's leadership in their decision-making processes.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/yujisatojr/multi-reg-analysis" target="_blank" rel="noreferrer"><img src={mock04} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/yujisatojr/multi-reg-analysis" target="_blank" rel="noreferrer"><h2>Multiple Regression Property Analysis</h2></a>
-                <p>Analyzed the real estate market in Japan and predicted property prices by implementing statistical methods such as OLS and multi-regression analysis. This project leveraged Python and various libraries such as Pandas, NumPy, Matplotlib, and Scikit-Learn.</p>
-            </div>
-            <div className="project">
-                <a href="https://holokai.byuh.edu/programs-of-study" target="_blank" rel="noreferrer"><img src={mock03} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://holokai.byuh.edu/programs-of-study" target="_blank" rel="noreferrer"><h2>Programs of Study</h2></a>
-                <p>Designed and developed a custom component for a CMS-based platform (e.g., 'Brightspot') using Java, Handlebars, and LESS. University students can find their majors of interest through this module.</p>
-            </div>
-            <div className="project">
-                <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><img src={mock02} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><h2>Transfer Evaluation Matrix</h2></a>
-                <p>Created an interactive CSV table generator with Java, Handlebars, and LESS. This project helps transfer students to quickly identify eligible credits.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><img src={mock01} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><h2>Submeowrine</h2></a>
-                <p>Developed and released an Android mobile application using Java and Android Studio that runs a 2D shooting game.</p>
-            </div>
+          <div className="project">
+            <a
+              href="https://github.com/patymunoz/inundaciones_gdl"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={mock013}
+                className="zoom"
+                alt="NLP pipeline"
+                width="100%"
+              />
+            </a>
+            <a
+              href="https://github.com/patymunoz/inundaciones_gdl"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h2>Pipeline NLP, APIs & Geospatial Statistics</h2>
+            </a>
+            <p>
+              Full end-to-end project combining web scraping, NLP, data
+              visualization, Django database integration, and geospatial
+              statistics. Developed in Python with Beautiful Soup, NLTK, Plotly,
+              GeoPandas, and Folium.
+            </p>
+          </div>
+
+          <div className="project">
+            <a
+              href="https://github.com/patymunoz/food_additives_ner"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={mock009}
+                className="zoom"
+                alt="NER dataset"
+                width="100%"
+              />
+            </a>
+            <a
+              href="https://github.com/patymunoz/food_additives_ner"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h2>Food Additives NER</h2>
+            </a>
+            <p>
+              NLP pipeline for generating a domain-specific Named Entity
+              Recognition dataset on food additives using spaCy, NLTK, and
+              OpenAI API.
+            </p>
+          </div>
+
+          <div className="project">
+            <a
+              href="https://formulario-ciri-vf9hvvp8edwphbqzccwaqy.streamlit.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={mock008}
+                className="zoom"
+                alt="Streamlit app"
+                width="100%"
+              />
+            </a>
+            <a
+              href="https://formulario-ciri-vf9hvvp8edwphbqzccwaqy.streamlit.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h2>Streamlit Application</h2>
+            </a>
+            <p>
+              Streamlit web application for managing and recording case
+              information. Users can upload datasets, complete and validate new
+              entries through interactive forms, and export updated files with
+              summary reports.
+            </p>
+          </div>
         </div>
+      </section>
+
+      {/* ──────── ACADEMIC PROJECTS ──────── */}
+      <section className="projects-section">
+        <h1>Academic Projects</h1>
+        <div className="projects-grid">
+          <div className="project">
+            <a
+              href="https://modelos-graficos-probabilisticos.readthedocs.io/es/latest/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={mock001}
+                className="zoom"
+                alt="PGM course"
+                width="100%"
+              />
+            </a>
+            <a
+              href="https://modelos-graficos-probabilisticos.readthedocs.io/es/latest/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h2>Probabilistic Graphical Models</h2>
+            </a>
+            <p>
+              Sphinx-based documentation for the “Probabilistic Graphical
+              Models” course, built and hosted on Read the Docs. Uses PyMC and
+              PgmPy for Bayesian modeling.
+            </p>
+          </div>
+
+          <div className="project">
+            <a
+              href="https://curso-machine-learning-python.readthedocs.io/es/latest/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={mock003}
+                className="zoom"
+                alt="ML course"
+                width="100%"
+              />
+            </a>
+            <a
+              href="https://curso-machine-learning-python.readthedocs.io/es/latest/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h2>Machine Learning Algorithms</h2>
+            </a>
+            <p>
+              Sphinx-based documentation for the “Machine Learning Algorithms”
+              course. Built and published on Read the Docs using Scikit-learn
+              for ML implementations.
+            </p>
+          </div>
+
+          <div className="project">
+            <a
+              href="https://curso-geoespacial.readthedocs.io/es/latest/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={mock005}
+                className="zoom"
+                alt="Geospatial analysis"
+                width="100%"
+              />
+            </a>
+            <a
+              href="https://curso-geoespacial.readthedocs.io/es/latest/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h2>Geospatial Analysis</h2>
+            </a>
+            <p>
+              Sphinx-based documentation for the “Geospatial Analysis” course.
+              Uses GeoPandas, Folium, and Osmnx for implementing geospatial
+              analytics.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
-    );
+  );
 }
 
 export default Project;

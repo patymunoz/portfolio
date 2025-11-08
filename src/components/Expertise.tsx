@@ -1,91 +1,100 @@
 import React from "react";
-import '@fortawesome/free-regular-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
-import Chip from '@mui/material/Chip';
-import '../assets/styles/Expertise.scss';
+import "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPython } from "@fortawesome/free-brands-svg-icons";
+import { faDatabase, faChartLine } from "@fortawesome/free-solid-svg-icons";
+import Chip from "@mui/material/Chip";
+import "../assets/styles/Expertise.scss";
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
-    "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
+  "Python",
+  "R",
+  "PgmPy",
+  "PyMC",
+  "Statsmodels",
+  "Pandas",
+  "NumPy",
+  "Scikit-learn",
+  "Hugging Face",
+  "Jupyter",
+  "SQL",
+  "PostgreSQL",
+  "GeoPandas",
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+  "QGIS",
+  "ArcGIS",
+  "GeoDa",
+  "OSGeo",
+  "Data Visualization",
+  "Tableau",
+  "Matplotlib",
+  "Seaborn",
+  "Storytelling",
 ];
 
-const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
-];
+const labelsThird = ["Git", "GitHub", "Docker"];
 
 function Expertise() {
-    return (
+  return (
     <div className="container" id="expertise">
-        <div className="skills-container">
-            <h1>Expertise</h1>
-            <div className="skills-grid">
-                <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
-
-                <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
-
-                <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
+      <div className="skills-container">
+        <h1>Expertise</h1>
+        <div className="skills-grid">
+          <div className="skill">
+            <FontAwesomeIcon icon={faPython} size="3x" />
+            <h3>Data Science & Machine Learning</h3>
+            <p>
+              Experienced in statistical modeling, machine learning, and data
+              wrangling using Python and R. Skilled in designing analytical
+              pipelines, feature engineering, and model evaluation to uncover
+              actionable insights.
+            </p>
+            <div className="flex-chips">
+              <span className="chip-title">Core tools:</span>
+              {labelsFirst.map((label, index) => (
+                <Chip key={index} className="chip" label={label} />
+              ))}
             </div>
+          </div>
+
+          <div className="skill">
+            <FontAwesomeIcon icon={faChartLine} size="3x" />
+            <h3>Data Visualization & Analytics</h3>
+            <p>
+              Proficient in transforming complex data into meaningful visual
+              narratives. Specialized in dashboards, interactive charts, and
+              geographic visualization for communicating insights to diverse
+              audiences.
+            </p>
+            <div className="flex-chips">
+              <span className="chip-title">Visualization stack:</span>
+              {labelsSecond.map((label, index) => (
+                <Chip key={index} className="chip" label={label} />
+              ))}
+            </div>
+          </div>
+
+          <div className="skill">
+            <FontAwesomeIcon icon={faDatabase} size="3x" />
+            <h3>Data Engineering & Automation</h3>
+            <p>
+              Adept at managing databases, automating data pipelines, and
+              integrating analytics workflows. Experienced with version control,
+              containerization.
+            </p>
+            <div className="flex-chips">
+              <span className="chip-title">Tech ecosystem:</span>
+              {labelsThird.map((label, index) => (
+                <Chip key={index} className="chip" label={label} />
+              ))}
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    );
+  );
 }
 
 export default Expertise;
