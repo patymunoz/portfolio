@@ -31,10 +31,10 @@ function Timeline() {
               ITESO · Jalisco, Mexico
             </h4>
             <p>
-              Teaching <em>Probabilistic Graphical Models</em> in the Master’s
-              in Data Science program. Providing academic advising for
-              undergraduate Mathematical Modeling students in applied projects
-              and business plan development.
+              Teach <em>Probabilistic Graphical Models</em> in the Master’s in
+              Data Science program and provide academic advising for
+              undergraduate Mathematical Modeling students on analytical and
+              applied data projects.
             </p>
           </VerticalTimelineElement>
 
@@ -52,11 +52,11 @@ function Timeline() {
               Conahcyt – CentroGeo · Mexico City
             </h4>
             <p>
-              Acquired, processed, and integrated national datasets for the
-              National Information Ecosystems (ENI) and Gema Geospatial Viewer.
-              Automated analytics workflows with Python and created visual
-              dashboards and technical reports to communicate public policy
-              insights through storytelling and visualization.
+              Worked on national-scale data and geospatial analytics pipelines
+              for public policy dashboards and data products. Automated
+              Python-based workflows, built geospatial pipelines with GeoPandas,
+              queried multi-source datasets in PostgreSQL/PostGIS, and improved
+              data processing efficiency and consistency for development teams.
             </p>
           </VerticalTimelineElement>
 
@@ -74,49 +74,10 @@ function Timeline() {
               Espacios que Inspiran, S.A. de C.V. · Jalisco
             </h4>
             <p>
-              Managed quantitative and geospatial data using GIS tools. Designed
-              surveys and focus groups for market and spatial research, and
-              created thematic maps to guide strategic business expansion.
-            </p>
-          </VerticalTimelineElement>
-
-          {/* 2019 - 2021 | Secretaría de Educación Jalisco */}
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: "white", color: "rgb(39, 40, 34)" }}
-            contentArrowStyle={{ borderRight: "7px solid white" }}
-            date="2019 - 2021"
-            iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Project Manager</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Secretaría de Educación Jalisco · Jalisco
-            </h4>
-            <p>
-              Coordinated logistics and implementation with government agencies.
-              Designed and delivered courses in science and public health.
-            </p>
-          </VerticalTimelineElement>
-
-          {/* 2015 - 2017 | Universidad de Guadalajara */}
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: "white", color: "rgb(39, 40, 34)" }}
-            contentArrowStyle={{ borderRight: "7px solid white" }}
-            date="2015 - 2017"
-            iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Adjunct Professor
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              University of Guadalajara · Jalisco
-            </h4>
-            <p>
-              Designed and taught courses for undergraduate students, providing
-              academic mentoring and methodological support.
+              Managed quantitative and geospatial data using GIS tools.
+              Conducted market and spatial analytics, produced thematic maps and
+              analytical reports, and supported strategic expansion decisions
+              with data-driven insights.
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

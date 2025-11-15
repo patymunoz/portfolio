@@ -1,6 +1,7 @@
 /* ====== Paleta ====== */
 $bg-dark: #0b0d12;
 $text-dark: #272822;
+$text-white: #f5f5f5;
 $text-muted: #6b7280;
 $card-bg: #ffffff;
 $line: rgba(167, 139, 250, 0.35);
@@ -46,7 +47,8 @@ $accent-light: #a78bfa;
   line-height: 1.6;
 }
 .vertical-timeline-element-content span {
-  color: $text-dark !important;
+  color: $text-white !important;
+  font-weight: 700;
 }
 
 .vertical-timeline-element-icon {

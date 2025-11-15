@@ -9,6 +9,7 @@ import mock010 from "../assets/images/mock010.png";
 import mock011 from "../assets/images/mock011.png";
 import mock012 from "../assets/images/mock012.png";
 import mock013 from "../assets/images/mock013.png";
+import mock014 from "../assets/images/mock014.png";
 
 import "../assets/styles/Project.scss";
 
@@ -41,9 +42,21 @@ function Project() {
                 <h2>VIH/SIDA Data Analysis</h2>
               </a>
               <p>
-                Data analysis and visualization project for the CONAHCYT
-                VIH/SIDA. I worked on automating data cleaning, processing, and
-                visualization tasks using Python.
+                I contributed to the{" "}
+                <em>Ecosistema Nacional Informático de Salud</em> by developing
+                the data processing pipeline behind the HIV transmission and
+                drug-resistance surveillance chapter. The project aimed to
+                support public-health decision-making by identifying
+                transmission clusters and potential antiretroviral resistance
+                patterns in Mexico City.
+                <br />
+                <br />I cleaned, standardized, and transformed clinical and
+                genomic datasets—received from Clínica Especializada Condesa and
+                CIEI—to produce the structured outputs used for interactive
+                visualizations and open datasets on the public platform. This
+                work enabled researchers and health institutions to monitor
+                transmission links, explore resistance profiles, and strengthen
+                prevention and treatment strategies.
               </p>
             </div>
           }
@@ -64,9 +77,19 @@ function Project() {
                 <h2>COVID-19 Data Analysis</h2>
               </a>
               <p>
-                Data analysis and visualization project for the CONAHCYT
-                COVID-19 research. I worked on automating data cleaning,
-                processing, and visualization tasks using Python.
+                I developed the automated EDA and data-processing pipeline used
+                to prepare genomic SARS-CoV-2 datasets from CoViGen-Mex and
+                GISAID for official dashboards and geospatial visualizations.
+                The incoming sequences were heterogeneous and inconsistent, so
+                my work focused on cleaning, standardizing, and transforming
+                them into reliable, analysis-ready outputs.
+                <br />
+                <br />I produced the structured datasets required by the
+                visualization and GIS teams, and performed statistical analyses
+                to support variant monitoring and genomic surveillance. This
+                automated workflow ensured consistent inputs for public
+                dashboards and maps, reducing manual workload and improving the
+                reproducibility of the surveillance process.
               </p>
             </div>
           }
@@ -92,9 +115,40 @@ function Project() {
                 <h2>Sargazo Data Analysis</h2>
               </a>
               <p>
-                Data analysis and visualization project for the CONAHCYT Sargazo
-                research. I worked on automating data cleaning, processing, and
-                visualization tasks using Python.
+                I contributed to the development of the Sargassum Actors Map, a
+                tool designed to connect the community working on monitoring,
+                mitigation, and adaptation strategies for pelagic sargassum in
+                the Mexican Caribbean. The project required consolidating
+                information from institutions and specialists addressing
+                different aspects of the sargassum phenomenon, and transforming
+                it into a structured dataset for a public, searchable platform.
+                <br />
+                <br />I supported the data collection, cleaning, and
+                standardization process, ensuring that profiles, thematic lines,
+                and institutional roles were consistent and usable for mapping
+                and analysis.
+              </p>
+            </div>
+          }
+          {
+            <div className="project">
+              <a href="" target="_blank" rel="noreferrer">
+                <img
+                  src={mock014}
+                  className="zoom"
+                  alt="Mortality data"
+                  width="100%"
+                />
+              </a>
+              <a href="" target="_blank" rel="noreferrer">
+                <h2>Mortality Database</h2>
+              </a>
+              <p>
+                INEGI mortality data changes structure year to year, making
+                multi-year analysis difficult. I automated the workflows that
+                clean, harmonize, and integrate these heterogeneous datasets
+                into a unified PostgreSQL database, enabling reproducible
+                epidemiological and demographic analysis.
               </p>
             </div>
           }
@@ -126,10 +180,11 @@ function Project() {
               <h2>Pipeline NLP, APIs & Geospatial Statistics</h2>
             </a>
             <p>
-              Full end-to-end project combining web scraping, NLP, data
-              visualization, Django database integration, and geospatial
-              statistics. Developed in Python with Beautiful Soup, NLTK, Plotly,
-              GeoPandas, and Folium.
+              Developed a pipeline that transforms unstructured social-media
+              text into georeferenced insights. Using NLP preprocessing and
+              embedding-based extraction with OpenAI prompting, I generated
+              structured location data that enabled geospatial analysis and
+              interactive heatmaps.
             </p>
           </div>
 
@@ -154,9 +209,11 @@ function Project() {
               <h2>Food Additives NER</h2>
             </a>
             <p>
-              NLP pipeline for generating a domain-specific Named Entity
-              Recognition dataset on food additives using spaCy, NLTK, and
-              OpenAI API.
+              Developed an NLP pipeline for generating a domain-specific Named
+              Entity Recognition dataset on food additives. Combined spaCy,
+              NLTK, and OpenAI prompting to extract chemical-related terminology
+              from raw text, clean and structure the corpus, and prepare
+              training data for downstream model fine-tuning.
             </p>
           </div>
 
@@ -178,13 +235,15 @@ function Project() {
               target="_blank"
               rel="noreferrer"
             >
-              <h2>Streamlit Application</h2>
+              <h2>Streamlit app for standardized data collection</h2>
             </a>
             <p>
-              Streamlit web application for managing and recording case
-              information. Users can upload datasets, complete and validate new
-              entries through interactive forms, and export updated files with
-              summary reports.
+              Previously, teams entered information using non-standard labels,
+              generating inconsistent datasets that were difficult to merge and
+              analyze. The app provides guided, dictionary-driven forms that
+              ensure consistency, allowing non-technical users to produce clean,
+              standardized records and export analysis-ready files with minimal
+              effort.
             </p>
           </div>
         </div>
