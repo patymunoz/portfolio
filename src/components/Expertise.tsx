@@ -2,46 +2,49 @@ import React from "react";
 import "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPython } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase, faChartLine } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDatabase,
+  faChartLine,
+  faRobot,
+  faServer,
+} from "@fortawesome/free-solid-svg-icons";
 import Chip from "@mui/material/Chip";
 import "../assets/styles/Expertise.scss";
 
-const labelsFirst = [
+const labelsAI = [
+  "LLM orchestration",
+  "Prompt engineering",
+  "NLP pipelines",
+  "Embeddings",
+  "Fine-tuning workflows",
+  "Agent architectures",
+  "API integration",
+];
+
+const labelsBackend = [
   "Python",
-  "R",
-  "Pandas",
-  "NumPy",
-  "Scikit-learn",
-  "GeoPandas",
-  "NLTK",
-  "spaCy",
-  "Word2Vec",
-  "FastAPI",
+  "Modular architecture",
+  "REST APIs",
+  "ETL pipelines",
+  "Data validation",
   "PostgreSQL",
-  "SQL",
+];
+
+const labelsML = [
+  "Classical ML models",
+  "Feature engineering",
+  "Experiment design",
+  "Model evaluation",
+  "Statistical inference",
+];
+
+const labelsTools = [
+  "LangChain",
+  "Hugging Face",
+  "OpenAI API",
   "Git",
   "GitHub",
-];
-
-const labelsSecond = [
-  "QGIS",
-  "ArcGIS",
-  "GeoDa",
-  "OSGeo",
-  "Data Visualization",
-  "Matplotlib",
-  "Seaborn",
-  "Leaflet.js",
-  "Storytelling",
-];
-
-const labelsThird = [
-  "LLM Prompting",
-  "OpenAI API",
-  "Embeddings",
-  "Vector Stores",
-  "Django REST",
-  "Docker",
+  "GitLab",
 ];
 
 function Expertise() {
@@ -51,18 +54,28 @@ function Expertise() {
         <h1>Expertise</h1>
         <div className="skills-grid">
           <div className="skill">
-            <FontAwesomeIcon icon={faPython} size="3x" />
-            <h3>Data Science & Machine Learning</h3>
+            <FontAwesomeIcon icon={faRobot} size="3x" />
+            <h3>AI Engineering</h3>
             <p>
-              Hands-on experience building analytical pipelines, developing ML
-              models, and structuring data for downstream applications. Skilled
-              in feature engineering, model evaluation, NLP fundamentals, and
-              geospatial ML workflows. Comfortable implementing prototypes and
-              production-ready scripts in Python.
+              LLM orchestration, prompt engineering, NLP pipelines, embeddings,
+              fine-tuning workflows, agent-based architectures, and API
+              integration.
             </p>
             <div className="flex-chips">
-              <span className="chip-title">Core tools:</span>
-              {labelsFirst.map((label, index) => (
+              <span className="chip-title">Focus:</span>
+              {labelsAI.map((label, index) => (
+                <Chip key={index} className="chip" label={label} />
+              ))}
+            </div>
+          </div>
+
+          <div className="skill">
+            <FontAwesomeIcon icon={faServer} size="3x" />
+            <h3>Backend & Systems</h3>
+            <p>Python, modular architecture design, and PostgreSQL.</p>
+            <div className="flex-chips">
+              <span className="chip-title">Backend:</span>
+              {labelsBackend.map((label, index) => (
                 <Chip key={index} className="chip" label={label} />
               ))}
             </div>
@@ -70,16 +83,14 @@ function Expertise() {
 
           <div className="skill">
             <FontAwesomeIcon icon={faChartLine} size="3x" />
-            <h3>Data Visualization & Analytics</h3>
+            <h3>Machine Learning</h3>
             <p>
-              Experienced in turning datasets -structured, unstructured, and
-              geoespatial- into actionable insights through clear narratives and
-              dashboards. Developed analytical reports and interactive
-              visualizations for public policy and business decisions.
+              Classical ML models, feature engineering, experiment design, model
+              evaluation, and statistical inference.
             </p>
             <div className="flex-chips">
-              <span className="chip-title">Visualization stack:</span>
-              {labelsSecond.map((label, index) => (
+              <span className="chip-title">ML:</span>
+              {labelsML.map((label, index) => (
                 <Chip key={index} className="chip" label={label} />
               ))}
             </div>
@@ -87,21 +98,14 @@ function Expertise() {
 
           <div className="skill">
             <FontAwesomeIcon icon={faDatabase} size="3x" />
-            <h3>AI engineering & generative AI</h3>
+            <h3>Tools</h3>
             <p>
-              I have implemented end-to-end data workflows that combine LLM
-              prompting, embeddings, geolocation, and API-based data
-              visualization. I have worked with Python-based LLM tooling,
-              including spaCy, NLTK, Word2Vec, and OpenAI APIs for NLP
-              preprocessing and structured-data extraction. Additionally, I have
-              built small RAG-style prototypes using LlamaIndex, vector stores,
-              and retrieval pipelines, gaining hands-on exposure to agent-like
-              interactions and generative AI development through academic and
-              personal projects.
+              LangChain, Hugging Face, OpenAI API, Git, and GitHub/GitLab for
+              version control and collaboration.
             </p>
             <div className="flex-chips">
-              <span className="chip-title">Tech ecosystem:</span>
-              {labelsThird.map((label, index) => (
+              <span className="chip-title">Stack:</span>
+              {labelsTools.map((label, index) => (
                 <Chip key={index} className="chip" label={label} />
               ))}
             </div>

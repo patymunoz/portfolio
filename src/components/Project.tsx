@@ -2,7 +2,7 @@ import React from "react";
 import mock001 from "../assets/images/mock001.png";
 import mock003 from "../assets/images/mock003.png";
 import mock005 from "../assets/images/mock005.png";
-import mock006 from "../assets/images/mock006.png";
+import agent01 from "../assets/images/agent01.png";
 import mock008 from "../assets/images/mock008.png";
 import mock009 from "../assets/images/mock009.png";
 import mock010 from "../assets/images/mock010.png";
@@ -42,21 +42,19 @@ function Project() {
                 <h2>VIH/SIDA Data Analysis</h2>
               </a>
               <p>
-                I contributed to the{" "}
-                <em>Ecosistema Nacional Informático de Salud</em> by developing
-                the data processing pipeline behind the HIV transmission and
-                drug-resistance surveillance chapter. The project aimed to
-                support public-health decision-making by identifying
-                transmission clusters and potential antiretroviral resistance
-                patterns in Mexico City.
+                Built the data processing pipeline behind the HIV transmission
+                and drug-resistance surveillance chapter of the{" "}
+                <em>Ecosistema Nacional Informático de Salud</em>. The goal was
+                to turn complex clinical and genomic data into clear signals for
+                public-health decision-making in Mexico City.
                 <br />
-                <br />I cleaned, standardized, and transformed clinical and
-                genomic datasets—received from Clínica Especializada Condesa and
-                CIEI—to produce the structured outputs used for interactive
-                visualizations and open datasets on the public platform. This
-                work enabled researchers and health institutions to monitor
-                transmission links, explore resistance profiles, and strengthen
-                prevention and treatment strategies.
+                <br />
+                I cleaned, standardized, and integrated datasets from Clínica
+                Especializada Condesa and CIEI, producing analysis-ready outputs
+                used in interactive visualizations and open datasets. This work
+                enabled health institutions to track transmission clusters,
+                explore resistance patterns, and strengthen prevention and
+                treatment strategies.
               </p>
             </div>
           }
@@ -77,19 +75,16 @@ function Project() {
                 <h2>COVID-19 Data Analysis</h2>
               </a>
               <p>
-                I developed the automated EDA and data-processing pipeline used
-                to prepare genomic SARS-CoV-2 datasets from CoViGen-Mex and
-                GISAID for official dashboards and geospatial visualizations.
-                The incoming sequences were heterogeneous and inconsistent, so
-                my work focused on cleaning, standardizing, and transforming
-                them into reliable, analysis-ready outputs.
+                Designed the automated EDA and preprocessing pipeline for
+                SARS-CoV-2 genomic data from CoViGen-Mex and GISAID, powering
+                official dashboards and geospatial visualizations.
                 <br />
-                <br />I produced the structured datasets required by the
-                visualization and GIS teams, and performed statistical analyses
-                to support variant monitoring and genomic surveillance. This
-                automated workflow ensured consistent inputs for public
-                dashboards and maps, reducing manual workload and improving the
-                reproducibility of the surveillance process.
+                <br />
+                I standardized heterogeneous sequences, produced clean datasets
+                for visualization and GIS teams, and ran statistical analyses to
+                support variant monitoring. The result was a reproducible,
+                low-touch workflow that improved data quality and reduced
+                manual effort.
               </p>
             </div>
           }
@@ -115,18 +110,14 @@ function Project() {
                 <h2>Sargazo Data Analysis</h2>
               </a>
               <p>
-                I contributed to the development of the Sargassum Actors Map, a
-                tool designed to connect the community working on monitoring,
-                mitigation, and adaptation strategies for pelagic sargassum in
-                the Mexican Caribbean. The project required consolidating
-                information from institutions and specialists addressing
-                different aspects of the sargassum phenomenon, and transforming
-                it into a structured dataset for a public, searchable platform.
+                Helped build the Sargassum Actors Map, a public platform that
+                connects institutions and specialists working on monitoring,
+                mitigation, and adaptation in the Mexican Caribbean.
                 <br />
-                <br />I supported the data collection, cleaning, and
-                standardization process, ensuring that profiles, thematic lines,
-                and institutional roles were consistent and usable for mapping
-                and analysis.
+                <br />
+                I consolidated and standardized multi-source records into a
+                structured dataset, ensuring consistent profiles, thematic
+                lines, and institutional roles for reliable mapping and search.
               </p>
             </div>
           }
@@ -144,11 +135,11 @@ function Project() {
                 <h2>Mortality Database</h2>
               </a>
               <p>
-                INEGI mortality data changes structure year to year, making
-                multi-year analysis difficult. I automated the workflows that
-                clean, harmonize, and integrate these heterogeneous datasets
-                into a unified PostgreSQL database, enabling reproducible
-                epidemiological and demographic analysis.
+                INEGI mortality data changes structure year to year, which
+                breaks longitudinal analysis. I automated the cleaning,
+                harmonization, and integration workflow to produce a unified
+                PostgreSQL database, enabling reliable epidemiological and
+                demographic analysis across years.
               </p>
             </div>
           }
@@ -159,6 +150,35 @@ function Project() {
       <section className="projects-section">
         <h1>Personal Projects</h1>
         <div className="projects-grid">
+          <div className="project">
+            <a
+              href="https://github.com/patymunoz/agent-lang"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={agent01}
+                className="zoom"
+                alt="LLM chef assistant"
+                width="100%"
+              />
+            </a>
+            <a
+              href="https://github.com/patymunoz/agent-lang"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h2>Multimodal LLM Chef Assistant</h2>
+            </a>
+            <p>
+              Designed and implemented a modular LLM-powered assistant using
+              LangChain. Integrated multimodal input processing
+              (image-to-ingredient extraction), web search tool orchestration,
+              conversational memory management, and structured recipe
+              generation.
+            </p>
+          </div>
+
           <div className="project">
             <a
               href="https://github.com/patymunoz/inundaciones_gdl"

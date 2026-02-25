@@ -1,3 +1,93 @@
+.contact_wrapper {
+  background: linear-gradient(135deg, rgba(80, 0, 202, 0.12), rgba(34, 211, 238, 0.08));
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 18px 40px rgba(13, 15, 22, 0.35);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.contact_wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(600px 240px at 10% -10%, rgba(167, 139, 250, 0.18), transparent 60%);
+  pointer-events: none;
+}
+
+.contact_wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(167, 139, 250, 0.45),
+    0 0 0 2px rgba(167, 139, 250, 0.45),
+    0 0 30px rgba(167, 139, 250, 0.35);
+  border-color: rgba(167, 139, 250, 0.5);
+}
+
+.contact_wrapper h1 {
+  margin-top: 0;
+}
+
+.contact_wrapper p {
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 720px;
+}
+
+.contact-cta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.contact-cta .MuiButton-root {
+  border-radius: 999px;
+  text-transform: none;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  padding: 10px 16px;
+}
+
+.contact-cta .MuiButton-contained {
+  background: linear-gradient(90deg, #6d28d9, #a78bfa);
+  box-shadow: 0 10px 22px rgba(109, 40, 217, 0.35);
+}
+
+.contact-cta .MuiButton-contained:hover {
+  background: linear-gradient(90deg, #5b21b6, #8b5cf6);
+  box-shadow: 0 12px 26px rgba(109, 40, 217, 0.45),
+    0 0 0 2px rgba(167, 139, 250, 0.45),
+    0 0 22px rgba(167, 139, 250, 0.35);
+}
+
+.contact-cta .MuiButton-outlined {
+  border-color: rgba(167, 139, 250, 0.5);
+  color: #ffffff;
+}
+
+.contact-cta .MuiButton-outlined:hover {
+  border-color: rgba(167, 139, 250, 0.9);
+  background-color: rgba(167, 139, 250, 0.08);
+  box-shadow: 0 10px 22px rgba(167, 139, 250, 0.25),
+    0 0 0 2px rgba(167, 139, 250, 0.3);
+}
+
+.contact-cta .MuiButton-text {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.contact-cta .MuiButton-text:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.contact-note {
+  display: block;
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .contact_wrapper svg {
   font-size: 1em;
   vertical-align: middle;

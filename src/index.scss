@@ -141,8 +141,127 @@ p, a, h1, h2, h3, h4, h5, label, button {
     border-right: 7px solid rgba(0, 0, 0, 0.08) !important;
   }
 
+  .vertical-timeline-element-content {
+    background: rgba(255, 255, 255, 0.9) !important;
+    color: #0d1116 !important;
+    border-color: rgba(80, 0, 202, 0.18) !important;
+  }
+
+  .vertical-timeline-element-content h3,
+  .vertical-timeline-element-content h4,
+  .vertical-timeline-element-content p {
+    color: #0d1116 !important;
+  }
+
+  .vertical-timeline-element-content::before {
+    background: linear-gradient(90deg, #5000ca, #a78bfa) !important;
+  }
+
+  .vertical-timeline-element-content-arrow {
+    border-right: 7px solid rgba(255, 255, 255, 0.9) !important;
+  }
+
+  .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px rgba(80, 0, 202, 0.25),
+      0 8px 20px rgba(80, 0, 202, 0.25) !important;
+  }
+
+  .vertical-timeline-element-content:hover {
+    box-shadow: 0 14px 34px rgba(80, 0, 202, 0.25),
+      0 0 0 2px rgba(80, 0, 202, 0.35),
+      0 0 26px rgba(80, 0, 202, 0.2);
+    border-color: rgba(80, 0, 202, 0.35) !important;
+  }
+
+  .projects-container .projects-grid .project {
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(80, 0, 202, 0.18);
+    box-shadow: 0 14px 30px rgba(13, 15, 22, 0.12);
+  }
+
+  .projects-container .projects-grid .project:hover {
+    border-color: rgba(80, 0, 202, 0.45);
+    box-shadow: 0 14px 34px rgba(80, 0, 202, 0.25),
+      0 0 0 2px rgba(80, 0, 202, 0.35),
+      0 0 26px rgba(80, 0, 202, 0.2);
+  }
+
+  .projects-section > h1 {
+    border-bottom: 2px solid rgba(13, 17, 22, 0.2);
+    color: #0d1116;
+  }
+
+  .contact_wrapper {
+    background: linear-gradient(135deg, rgba(80, 0, 202, 0.08), rgba(34, 211, 238, 0.06));
+    border: 1px solid rgba(80, 0, 202, 0.2);
+    box-shadow: 0 16px 36px rgba(13, 15, 22, 0.12);
+  }
+
+  .contact_wrapper p,
+  .contact-note {
+    color: rgba(13, 17, 22, 0.7);
+  }
+
+  .contact-cta .MuiButton-outlined {
+    color: #0d1116;
+    border-color: rgba(80, 0, 202, 0.35);
+  }
+
+  .contact-cta .MuiButton-outlined:hover {
+    box-shadow: 0 10px 22px rgba(80, 0, 202, 0.2),
+      0 0 0 2px rgba(80, 0, 202, 0.25);
+  }
+
+  .contact-cta .MuiButton-text {
+    color: rgba(13, 17, 22, 0.8);
+  }
+
+  .contact_wrapper:hover {
+    box-shadow: 0 14px 34px rgba(80, 0, 202, 0.25),
+      0 0 0 2px rgba(80, 0, 202, 0.35),
+      0 0 26px rgba(80, 0, 202, 0.2);
+    border-color: rgba(80, 0, 202, 0.35);
+  }
+
+  .skills-container .skills-grid .skill {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(80, 0, 202, 0.22);
+    box-shadow: 0 18px 36px rgba(13, 15, 22, 0.16);
+    color: #0d1116;
+  }
+
+  .skills-container .skills-grid .skill:hover {
+    box-shadow: 0 14px 34px rgba(80, 0, 202, 0.25),
+      0 0 0 2px rgba(80, 0, 202, 0.35),
+      0 0 26px rgba(80, 0, 202, 0.2);
+  }
+
+  .skills-container .skills-grid .skill h3,
+  .skills-container .skills-grid .skill p {
+    color: #0d1116;
+  }
+
+  .skills-container svg {
+    color: #0d1116 !important;
+  }
+
+  .skills-container h1 {
+    color: #0d1116;
+  }
+
   .flex-chips .chip-title {
     color: #0d1116;
+  }
+
+  .chip {
+    background-color: rgba(80, 0, 202, 0.06) !important;
+    border: 1px solid rgba(80, 0, 202, 0.28) !important;
+    color: #0d1116 !important;
+    box-shadow: 0 4px 10px rgba(80, 0, 202, 0.12);
+  }
+
+  .chip span {
+    color: #0d1116 !important;
   }
 }
 

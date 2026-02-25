@@ -20,7 +20,7 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "white", color: "rgb(39, 40, 34)" }}
             contentArrowStyle={{ borderRight: "7px solid white" }}
-            date="2025 - Present"
+            date="2025 — Present"
             iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
@@ -28,35 +28,40 @@ function Timeline() {
               Adjunct Professor & External Consultant
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              ITESO · Jalisco, Mexico
+              ITESO — Jalisco, MX
             </h4>
             <p>
-              Teach <em>Probabilistic Graphical Models</em> in the Master’s in
-              Data Science program and provide academic advising for
-              undergraduate Mathematical Modeling students on analytical and
-              applied data projects.
+              Teach in the Master’s in Data Science program and mentor
+              undergraduate students in Mathematical Modeling and applied data
+              projects.
+              <br />
+              <br />
+              <strong>Focus:</strong> Python, PGMs, Bayesian Modeling, Teaching
             </p>
           </VerticalTimelineElement>
 
-          {/* 2022 - 2024 | Conahcyt - CentroGeo */}
+          {/* 2021 - 2024 | Conahcyt - CentroGeo */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "white", color: "rgb(39, 40, 34)" }}
             contentArrowStyle={{ borderRight: "7px solid white" }}
-            date="2022 - 2024"
+            date="2021 — 2024"
             iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Data Analyst</h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Conahcyt – CentroGeo · Mexico City
+              Conahcyt / CentroGeo — Mexico City, MX
             </h4>
             <p>
-              Worked on national-scale data and geospatial analytics pipelines
-              for public policy dashboards and data products. Automated
-              Python-based workflows, built geospatial pipelines with GeoPandas,
-              queried multi-source datasets in PostgreSQL/PostGIS, and improved
-              data processing efficiency and consistency for development teams.
+              Designed and maintained automated data-processing pipelines in
+              Python to handle large multi-source datasets. Implemented
+              validation logic and reusable transformation modules under version
+              control to ensure robustness and reproducibility across recurring
+              analytical workflows.
+              <br />
+              <br />
+              <strong>Focus:</strong> Python, PostgreSQL, Git, Version Control
             </p>
           </VerticalTimelineElement>
 
@@ -65,19 +70,23 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "white", color: "rgb(39, 40, 34)" }}
             contentArrowStyle={{ borderRight: "7px solid white" }}
-            date="2019 - 2021"
+            date="2019 — 2021"
             iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Data Analyst</h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Espacios que Inspiran, S.A. de C.V. · Jalisco
+              Espacios que Inspiran — Jalisco, MX
             </h4>
             <p>
-              Managed quantitative and geospatial data using GIS tools.
-              Conducted market and spatial analytics, produced thematic maps and
-              analytical reports, and supported strategic expansion decisions
-              with data-driven insights.
+              Performed market and spatial analyses to support business
+              expansion decisions. Developed analytical workflows, thematic
+              maps, and spatial statistics to translate data into
+              decision-relevant insights.
+              <br />
+              <br />
+              <strong>Focus:</strong> Spatial Analysis, Data Visualization,
+              Geospatial Statistics
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

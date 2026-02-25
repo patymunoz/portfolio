@@ -11,7 +11,7 @@ import DownloadIcon from "@mui/icons-material/Download";
 const EMAIL = "munpaty@gmail.com";
 const SUBJECT = encodeURIComponent("Hello Patricia — portfolio inquiry");
 const BODY = encodeURIComponent(
-  "Hi Patricia,\n\nI found your portfolio and would like to connect regarding...\n\nThanks!"
+  "Hi Patricia,\n\nI found your portfolio and would like to connect regarding...\n\nThanks!",
 );
 
 function Contact() {
@@ -37,7 +37,7 @@ function Contact() {
 
           <Box className="contact-cta">
             <Button
-              variant="contained"
+              variant="outlined"
               startIcon={<EmailIcon />}
               href={`mailto:${EMAIL}?subject=${SUBJECT}&body=${BODY}`}
             >
@@ -83,10 +83,6 @@ function Contact() {
               {copied ? "Copied!" : "Copy email"}
             </Button>
           </Box>
-
-          <small className="contact-note">
-            Prefer scheduling? I can add a Calendly link here on request.
-          </small>
         </div>
       </div>
     </div>

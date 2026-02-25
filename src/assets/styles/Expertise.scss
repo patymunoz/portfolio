@@ -55,7 +55,9 @@ $chip-border: #3b3b4a;
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(80, 0, 202, 0.14);
+    box-shadow: 0 14px 34px rgba(167, 139, 250, 0.45),
+      0 0 0 2px rgba(167, 139, 250, 0.45),
+      0 0 30px rgba(167, 139, 250, 0.35);
   }
 }
 
